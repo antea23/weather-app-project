@@ -1,0 +1,15 @@
+h2,
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+.card {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  margin: 20px 40px;
+}
+#date {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
