@@ -1,5 +1,4 @@
-h2,
-h3 {
+h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   padding: 10px;
@@ -10,7 +9,6 @@ h3 {
   margin: 20px 40px;
 }
 #date {
-  text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .git {
