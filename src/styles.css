@@ -3,6 +3,9 @@ h2 {
   padding: 10px;
   font-size: 30px;
 }
+.overview {
+  text-align: center;
+}
 .card {
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   margin: 20px 40px;
@@ -10,13 +13,16 @@ h2 {
 #date {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+#description {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
 .git {
   display: block;
   text-align: center;
 }
-.overview {
-  text-align: center;
-}
+
 ul {
   margin: 0;
   padding: 0;
