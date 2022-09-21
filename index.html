@@ -16,99 +16,61 @@
   </head>
   <body>
     <div class="container">
-      <div class="card" id="city-input">
-        <div class="card-body">
-          <form id="city-search">
-            <div class="row justify-content-center p-3">
-              <div class="col-4">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    placeholder="Enter city name"
-                    autofocus
-                    class="form-control form-control-sm"
-                    id="city-search-engine"
-                  />
-                </div>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter city name"
+                  autofocus
+                  class="form-control"
+                  id="city-input"
+                />
               </div>
-              <div class="col-4">
-                <div class="form-group">
-                  <input type="submit" class="btn btn-primary" value="Search" />
-                </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  value="Search"
+                />
               </div>
             </div>
           </form>
 
-          <br />
-          <br />
-          <div class="overview">
-          <h2 id="current-city">Dubrovnik</h2>
-          <p id="date"></p>
-          <img src="" alt="Clear" id="icon" />
-          <strong id="temperature">30</strong
-                ><span class="units">°C</span>
-                </div>
-                <br/>
-                <p id="description">Sunny</p>
-              </div>
-          
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> m/h</li>
-            </ul>
-          <div class="card" id="days">
-            <div class="row justify-content-center">
-              <div class="col-2 class text-center">
-                <div class="card-body">
-                  <h4 class="card-day">Tuesday</h4>
-                  <p>☀</p>
-                  <p>Sunny</p>
-                  <p>30℃</p>
-                </div>
-              </div>
-              <div class="col-2 class text-center">
-                <div class="card-body">
-                  <h4 class="card-day">Wednesday</h4>
-                  <p>⛈</p>
-                  <p>Few Tstorms</p>
-                  <p>22℃</p>
-                </div>
-              </div>
-              <div class="col-2 class text-center">
-                <div class="card-body">
-                  <h4 class="card-day">Thursday</h4>
-                  <p>🌧</p>
-                  <p>Rainy</p>
-                  <p>25℃</p>
-                </div>
-              </div>
-              <div class="col-2 class text-center">
-                <div class="card-body">
-                  <h4 class="card-day">Friday</h4>
-                  <p>☀</p>
-                  <p>Sunny</p>
-                  <p>28℃</p>
-                </div>
-              </div>
-              <div class="col-2 class text-center">
-                <div class="card-body">
-                  <h4 class="card-day">Saturday</h4>
-                  <p>☀</p>
-                  <p>Sunny</p>
-                  <p>30℃</p>
-                </div>
+          <h1 id="city"></h1>
+          <ul>
+            <li id="date"></li>
+            <li id="description"></li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img src="" alt="" id="icon" />
+                <strong id="temperature"></strong>
+                <span class="units">°C</span>
               </div>
             </div>
+            <div class="col-md-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+              </ul>
+            </div>
           </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <small class="git">
+          <a
+            href="https://github.com/antea23/weather-app-project"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Antea Bjeliš ©
+        </small>
       </div>
     </div>
-    <p class="git">
-      <a href="https://github.com/antea23/weather-app-project" target="_blank"
-        >Open-source code</a
-      >
-      by Antea Bjeliš ©
-    </p>
     <script src="src/index.js"></script>
   </body>
 </html>
